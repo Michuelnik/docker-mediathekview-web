@@ -1,4 +1,4 @@
-[![GitHub-Issues](https://img.shields.io/github/issues/michuelnik/docker-mediathekview-web)](https://github.com/michueknik/docker-mediathekview-web/issues)
+[![GitHub-Issues](https://img.shields.io/github/issues/michuelnik/docker-mediathekview-web)](https://github.com/michuelnik/docker-mediathekview-web/issues)
 [![GitHub-Releases](https://img.shields.io/github/v/tag/michuelnik/docker-mediathekview-web.svg)](https://github.com/michuelnik/docker-mediathekview-web/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/michuelnik/mediathekview-web)](https://hub.docker.com/r/michuelnik/mediathekview-web)
 
