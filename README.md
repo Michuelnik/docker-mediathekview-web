@@ -3,7 +3,7 @@
 [![GitHub-Releases](https://img.shields.io/github/v/release/michuelnik/docker-mediathekview-web.svg)](https://github.com/michuelnik/docker-mediathekview-web/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/michuelnik/mediathekview-web)](https://hub.docker.com/r/michuelnik/mediathekview-web)
 
-# docker-mediathekview
+# docker-mediathekview-web
 X11rdp Version of Mediathekview
 ## About
 Using this container allows you to run Mediathekview as a service and control it via webbrowser like Firefox or Chrome.
