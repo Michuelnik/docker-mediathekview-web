@@ -3,7 +3,7 @@ FROM jlesage/baseimage-gui:debian-10-v4
 
 ENV USER_ID=0 GROUP_ID=0 TERM=xterm
 
-ARG MEDIATHEK_VERSION=14.1.0
+ARG MEDIATHEK_VERSION=14.2.0
 
 # Refresh apt cache
 RUN apt-get update \
@@ -47,7 +47,7 @@ LABEL \
       org.label-schema.schema-version="1.0"
 
 ENV APP_VERSION=$MEDIATHEK_VERSION
-ARG DOCKER_IMAGE_VERSION=
+ARG DOCKER_IMAGE_VERSION=0
 ENV DOCKER_IMAGE_VERSION=$DOCKER_IMAGE_VERSION
 
 # Define software download URLs.
