@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Mediathekview</Name>
+  <Repository>michuelnik/mediathekview-web:latest</Repository>
+  <Registry>https://registry.hub.docker.com/r/michuelnik/mediathekview-web</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/michuelnik/docker-mediathekview-web</Project>
+  <Overview>Using this container allows you to run Mediathekview as a service and control it via webbrowser like Firefox or Chrome.&#xD;
+  The X11rdp feature is inherited from https://github.com/jlesage/docker-baseimage-gui.&#xD;
+  &#xD;
+  This template is NOT OFFICIAL and made by MagicLike. (https://codeberg.org/Unraid-Docker-Templates/Mediathekview-Unraid)&#xD;
+  You can find the Docker image repository here: https://github.com/conrad784/docker-mediathekview-webinterface&#xD;
+  And the fork: https://github.com/Michuelnik/docker-mediathekview-web&#xD;
+  &#xD;
+  After the install, you have to set the download location to "/output" in Mediathekview to get the downloads to your set location / media library.&#xD;
+  </Overview>
+  <Category>Downloaders MediaApplication:Video</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/mediathekview/MediathekView/17c92fa2cbc8c8c26466551143de4e1ffae817e4/.install4j/MediathekView%40x128.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="5800" Default="5800" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5800</Config>
+  <Config Name="Secure Connection" Target="SECURE_CONNECTION" Default="" Mode="" Description="When set to 1, an encrypted connection is used to access the application's GUI (either via a web browser or VNC client)." Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="Web Authentication" Target="WEB_AUTHENTICATION" Default="" Mode="" Description="When set to 1, the application's GUI is protected via a login page when accessed via a web browser. Access is allowed only when providing valid credentials. NOTE: This feature requires secure connection to be enabled." Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="Web User" Target="WEB_AUTHENTICATION_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"> </Config>
+  <Config Name="Web Password" Target="WEB_AUTHENTICATION_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"> </Config>
+  <Config Name="VNC Port" Target="5900" Default="" Mode="rw" Description="Optional Port to access the UI via VNC" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="VNC Password" Target="VNC_PASSWORD" Default="" Mode="" Description="Only needed, if you want to use VNC" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/Mediathekview/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/Mediathekview/config</Config>
+  <Config Name="Media library" Target="/output" Default="" Mode="rw" Description="Path to your media library / download path for Mediathekview" Type="Path" Display="always" Required="true" Mask="false"> </Config>
+  <Config Name="Timezone" Target="TZ" Default="Etc/UTC" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Etc/GMT-1</Config>
+  <Config Name="Dark Mode" Target="DARK_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Restart after crash?" Target="KEEP_APP_RUNNING" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="App name" Target="APP_NAME" Default="DockerApp" Mode="" Description="Name of the App" Type="Variable" Display="always" Required="false" Mask="false">Mediathekview</Config>
+  <Config Name="Window Width" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">1280</Config>
+  <Config Name="Window Height" Target="DISPLAY_HEIGHT" Default="768" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="always" Required="false" Mask="false">768</Config>
+  <TailscaleStateDir/>
+</Container>

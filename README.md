@@ -48,3 +48,6 @@ Run the container with some testing environment:
 
 attach to running container and debug:
 `docker exec -it mymedia bash`
+
+## Unraid
+Find an unraid service snippet in `unraid/Mediathekview.xml`. (Thanks to Revan335.)
