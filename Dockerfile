@@ -1,7 +1,7 @@
 # Pull base image.
 FROM jlesage/baseimage-gui:debian-10-v4
 
-ARG MEDIATHEK_VERSION=14.2.0 \
+ARG MEDIATHEK_VERSION=14.3.1 \
     DOCKER_IMAGE_VERSION=1 \
     MEDIATHEKVIEW_URL=https://download.mediathekview.de/stabil/MediathekView-$MEDIATHEK_VERSION-linux.tar.gz
 
